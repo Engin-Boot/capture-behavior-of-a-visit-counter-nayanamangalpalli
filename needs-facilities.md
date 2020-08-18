@@ -4,7 +4,8 @@ Scenario: Report visitor trends during a week of operation
 
 Given a system working properly (counting and display of count)\
 When a system provides a report of number of patients visiting hospital on hourly and daily basis.\
-Then facility manager can arrange beds and seats based on report.\
+(Patients mostly come at evening or saturday,sunday)\
+Then facility manager can arrange beds and seats based on report.
 
 Scenario: Alert when seating capacity is full
 
