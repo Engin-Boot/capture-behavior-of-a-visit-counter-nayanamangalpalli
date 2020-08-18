@@ -1,19 +1,21 @@
 # Visit-counter for a Facilities Manager
 
-Scenario: Report visitor trends during a week of operation
+### Scenario: Report visitor trends during a week of operation
 
-Given a system working properly (counting and display of count)\
+Given a system consists of sensor that counts number of visitors and backend server
 
-When a system provides a report of number of patients visiting hospital\
+When a sensor counts number of visitors
+
+Then server provides a report of number of patients visiting hospital\
 on hourly and daily basis.\
-(Patients mostly come at evening or saturday,sunday)\
+(Patients mostly come at evening or saturday,sunday)
 
-Then facility manager can arrange beds and seats based on report.
+### Scenario: Alert when seating capacity is full
 
-Scenario: Alert when seating capacity is full
+Given a limited number of seats are available\
+And: system consists of sensor which counts empty seats and backend server
 
-Given the seating capacity is limited and alert system working properly.\
+When only two empty seats are remaining.
 
-When alert system is offline\
-
-Then notification sent to facility manager that alert system is offline.
+Then notification sent to facility manager that\
+seating capacity will be full in while.
