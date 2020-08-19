@@ -2,13 +2,17 @@
 
 Scenario: Show patient visits during working days and holidays
 
-  Given - patient visit count of working days and holidays
-  When -  more patients are admitted in holidays than working days 
-  Then -  emergency notification sent to director\
-          availability of emergency beds and staff 
-
+Given a system consists of sensor that counts number of patients and display\
+And: system working 24/7\
+When patient enters the hospital\
+Then the patient count is incremented\
+And:shown on display
+<hr>
 Scenario: Compute parking slots to reserve for visiting specialists
 
-  Given - Limited parking slots
-  When -  vehicles of visiting specialists exceeds a limit
-  Then -  uses extra parking area
+Given a system that manages schedule of specialists\
+And: limited space\
+And: security staff available
+
+When vehicles of visiting specialists enters a hospital\
+Then the allocated parking slot number is given to specialist\
