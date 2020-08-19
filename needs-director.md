@@ -7,7 +7,7 @@ And: system working 24/7\
 When patient enters the hospital\
 Then the patient count is incremented\
 And:shown on display
-<hr>
+
 Scenario: Compute parking slots to reserve for visiting specialists
 
 Given a system that manages schedule of specialists\
