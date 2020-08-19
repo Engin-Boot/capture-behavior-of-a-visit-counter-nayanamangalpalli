@@ -10,7 +10,6 @@ Then server provides a report of number of patients visiting hospital\
 on hourly and daily basis.\
 (Patients mostly come at evening or saturday,sunday)
 
-<hr>
 Scenario: Alert when seating capacity is full
 
 Given a limited number of seats are available\
