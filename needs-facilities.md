@@ -9,7 +9,7 @@ And: server increments,stores visit count and generate report
 When a sensor collects number of visitors entered in hospital
 
 Then server provides a report of number of patients visiting hospital\
-on daily and hourly basis.\
+on daily and hour basis.\
 (Patient visits hospital in evenings or weekend frequently)
 
 ## Scenario: Alert when seating capacity is full
@@ -18,7 +18,7 @@ Given a limited number of seats are available\
 And: system consists of sensor which counts empty seats and server\
 that sends alerts to manager
 
-When only two empty seats are remaining.
+When two empty seats are remaining.
 
 Then notification sent to facility manager that\
 seating capacity will be full in while.
