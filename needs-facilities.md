@@ -9,8 +9,8 @@ And: server increments,stores visit count and generate report
 When a sensor collects number of visitors entered in hospital
 
 Then server provides a report of number of patients visiting hospital\
-on hourly and daily basis.\
-(Patients mostly come at evening or weekends)
+on daily and hourly basis.\
+(Patient visits hospital in evenings or weekend frequently)
 
 ## Scenario: Alert when seating capacity is full
 
