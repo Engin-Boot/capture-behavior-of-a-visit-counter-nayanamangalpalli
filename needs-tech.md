@@ -9,7 +9,7 @@ Then current count of patients saved in storage.
 
 Scenario: Reconcile counts if the sensor is offline for a while
 
-Given a counting sytem consists of sensor,server\
+Given a counting system consists of sensor,server\
 And: senor is offline
 
 When patients visits a hospital\
